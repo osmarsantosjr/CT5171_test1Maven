@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+     triggers {
+        githubPush()
+    }
+
     stages {
         stage ('GetProject') {
             steps {
-                git 'https://github.com/takfarinassaber/CT5171_test1Maven.git'
+                git 'https://github.com/osmarsantosjr/CT5171_test1Maven.git'
             }
         }
         stage ('build') {
