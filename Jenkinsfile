@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage ('GetProject') {
             steps {
-                git 'https://github.com/osmarsantosjr/CT5171_test1Maven.git'
+                git 'https://github.com/osmarsantosjr/CT5171_test1Maven'
             }
         }
         stage ('build') {
